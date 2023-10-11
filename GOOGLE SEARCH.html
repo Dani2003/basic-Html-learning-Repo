@@ -1,0 +1,73 @@
+<!-- index.html -->
+
+<!-- Google Search page -->
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Links to other pages -->
+    <a href="image-search.html">Image Search</a>
+    <a href="advanced-search.html">Advanced Search</a>
+  
+    <!-- Search bar and button -->
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="Google Search">
+      <button type="submit">Google Search</button>
+    </form>
+  
+    <!-- "I'm Feeling Lucky" button -->
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="Google Search">
+      <button type="submit" name="btnI" value="I'm Feeling Lucky">I'm Feeling Lucky</button>
+    </form>
+  </body>
+</html>
+
+<!-- image-search.html -->
+
+<!-- Google Image Search page -->
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Link to Google Search page -->
+    <a href="index.html">Google Search</a>
+  
+    <!-- Search bar and button -->
+    <form action="https://www.google.com/search">
+      <input type="text" name="q" placeholder="Google Image Search">
+      <button type="submit">Search</button>
+      <input type="hidden" name="tbm" value="isch">
+    </form>
+  </body>
+</html>
+
+<!-- advanced-search.html -->
+
+<!-- Google Advanced Search page -->
+<html>
+  <head>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+    <!-- Link to Google Search page -->
+    <a href="index.html">Google Search</a>
+  
+    <!-- Advanced search options -->
+    <form action="https://www.google.com/search">
+      <label for="all-words">Find pages with... "all these words:"</label>
+      <input type="text" name="q" id="all-words">
+      <br>
+      <label for="exact-phrase">Find pages with... "this exact word or phrase:"</label>
+      <input type="text" name="q" id="exact-phrase">
+      <br>
+      <label for="any-words">Find pages with... "any of these words:"</label>
+      <input type="text" name="q" id="any-words">
+      <br>
+      <label for="none-words">Find pages with... "none of these words:"</label>
+      <input type="text" name="q" id="none-words">
+      <br>
+      <!-- "Advanced Search" button -->
+      <button type="submit" style="color: white; background-color: blue;">Advanced Search</button>

@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Google Search</title>
+  <style>
+    /* Add your CSS styles here */
+    .search-container {
+      display: flex;
+      justify-content: center;
+    }
+    .search-bar {
+      border-radius: 10px;
+      border: 1px solid gray;
+      padding: 10px;
+      width: 50%;
+      text-align: center;
+    }
+    .search-button {
+      border-radius: 10px;
+      border: 1px solid blue;
+      color: white;
+      background-color: blue;
+      padding: 10px;
+      width: 20%;
+      text-align: center;
+      cursor: pointer;
+    }
+    .lucky-button {
+      border-radius: 10px;
+      border: 1px solid blue;
+      color: white;
+      background-color: blue;
+      padding: 10px;
+      width: 10%;
+      text-align: center;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="search-container">
+    <form>
+      <input type="text" class="search-bar" placeholder="Search Google">
+      <button type="submit" class="search-button">Google Search</button>
+      <button type="button" class="lucky-button">I'm Feeling Lucky</button>
+    </form>
+  </div>
+  <div>
+    <a href="image-search.html">Google Image Search</a>
+    <a href="advanced-search.html">Google Advanced Search</a>
+  </div>
+  <script>
+    // Add your JavaScript code here
+    const luckyButton = document.querySelector('.lucky-button');
+    luckyButton.addEventListener('click', () => {
+      const searchQuery = document.querySelector('.search-bar').value;
+      window.location.href = `https://www.google.com/search?q=${searchQuery}&btnI`;
+    });
+  </script>
+</body>
+</html>
